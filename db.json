@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "sam ndu",
+      "email": "samndu2@gmail.com",
+      "password": "samuel",
+      "date_created": "09/09/2019",
+      "date_updated": "09/09/2019"
+    },
+    {
+      "name": "sam",
+      "email": "sams@yahoo.com",
+      "password": "sam",
+      "id": 2
+    },
+    {
+      "name": "Ndu Samuel",
+      "email": "admin",
+      "password": "1111",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Posts",
+      "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "userId": 1,
+      "image": "https://cdn.pixabay.com/photo/2019/07/21/19/36/rafting-4353428_960_720.jpg",
+      "date_created": "09/09/2019",
+      "date_updated": "20/09/2019"
+    },
+    {
+      "id": 2,
+      "title": "Second Post",
+      "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "userId": 1,
+      "image": "https://cdn.pixabay.com/photo/2019/07/21/19/36/rafting-4353428_960_720.jpg",
+      "date_created": "09/09/2019",
+      "date_updated": "09/09/2019"
+    },
+    {
+      "id": 3,
+      "title": "Third Post",
+      "content": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "userId": 1,
+      "date_created": "09/09/2019",
+      "date_updated": "09/09/2019"
+    },
+    {
+      "title": "Fourth Post",
+      "content": "Some quick example text to build on the card title and make up the bulk of the card's content.\n                        ",
+      "userId": 1,
+      "date_created": "17/8/2019 TM 13:3",
+      "date_updated": "17/8/2019 TM 13:3",
+      "id": 4
+    },
+    {
+      "title": "new product",
+      "content": "hhhllkllll';;;z",
+      "userId": 1,
+      "date_created": "19/09}/2019",
+      "date_updated": "20/09/2019",
+      "id": 5
+    },
+    {
+      "title": "learn new stack",
+      "content": "kkkkk",
+      "userId": "3",
+      "date_created": "20/09/2019",
+      "date_updated": "20/09/2019",
+      "id": 6
+    },
+    {
+      "title": "ggg",
+      "content": "ddddd",
+      "userId": "3",
+      "date_created": "20/09/2019",
+      "date_updated": "20/09/2019",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "ll'll..",
+      "postId": 1,
+      "userId": 1,
+      "date_created": "09/09/2019",
+      "date_updated": "20/09/2019"
+    },
+    {
+      "id": 2,
+      "body": "something",
+      "postId": 1,
+      "userId": 2,
+      "date_created": "09/09/2019",
+      "date_updated": "09/09/2019"
+    },
+    {
+      "body": "kkkk",
+      "postId": "4",
+      "userId": "3",
+      "date_created": "20/09/2019",
+      "date_updated": "20/09/2019",
+      "id": 8
+    },
+    {
+      "body": "kkkk",
+      "postId": "4",
+      "userId": "3",
+      "date_created": "20/09/2019",
+      "date_updated": "20/09/2019",
+      "id": 9
+    },
+    {
+      "body": "jjjj",
+      "postId": "7",
+      "userId": "3",
+      "date_created": "20/09/2019",
+      "date_updated": "20/09/2019",
+      "id": 10
+    }
+  ]
+}
