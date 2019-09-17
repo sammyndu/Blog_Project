@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Posts</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default fixed-top">
+            <a class="navbar-brand" href="#">SAM BLOG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="display:flex;justify-content: flex-end">
+                <ul class="navbar-nav" >
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="welcome-user"></a>
+                </li>
+                <li class="nav-item" id="log-out">
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" id="log-in">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html" id="sign-up">Sign Up</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            
+            <div id="post-info">
+                
+            </div>
+            <div id="comments" class="mt-2">
+                <p>
+                    <a class="btn btn-outline-light" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Comments
+                    </a>
+                </p>
+                <div class="collapse comment-body" id="collapseExample">
+                    <!-- <div class="card card-body">
+                        <h6 id="user-name"></h6>
+                        <p id="comment"></p>
+                        <span id="comment-date"></span>
+                    </div> -->
+                </div>
+                <div class="add-comment mt-2">
+                        <textarea rows="4" cols="50" id="new-comment" class="form-control form-group col-md-6"></textarea>
+                        <button id="comment-btn" class="btn btn-primary">Add comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle2">Edit Post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             <form id="post-body">
+
+             </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button id="save2" type="button" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Edit Comment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="edit-comment">
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button id="save" type="button" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/posts.js"></script>
+</body>
+</html>
