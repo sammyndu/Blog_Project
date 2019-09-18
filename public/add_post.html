@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-default fixed-top">
+                <a class="navbar-brand" href="#">SAM BLOG</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" >
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#" id="welcome-user"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="log-in">Log In</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#" id="log-out">Log Out</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html" id="sign-up">Sign Up</a>
+                    </li>
+                    <li class="nav-item dropdown" id="dropAppend">
+                        
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+    <div class="row">
+        <div class="col-md-6 offset-3 content">
+            <div class="card" style="width: 30rem;"> 
+                    <div class="card-header">
+                        <h5>Add Post</h5>
+                    </div>                   
+                <div class="card-body">
+                    <!-- <h5 class="card-title"></h5> -->
+                    <form>
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control form-group" id="title" required>
+                        <label for="content">Post Content</label>
+                        <textarea rows="4" cols="50" id="content" class="form-control form-group"></textarea>
+                        <label for="image">Image Url</label>
+                        <input type="url" class="form-control form-group" id="image">
+                        <button type="submit" id="submit" class="btn btn-primary">Submit</button><br>
+                    </form>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/add_post.js"></script>
+</body>
+</html>
