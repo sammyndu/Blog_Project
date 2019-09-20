@@ -90,8 +90,8 @@ $(document).ready(function(){
     
     });
 
-    // $('#new-post').click(function(){
-
-    // })
+    $('#logout-btn').click(function(){
+        sessionStorage.clear();
+    })
     
 });

@@ -28,6 +28,7 @@ $(document).ready(function(){
                 }
                 else{
                     sessionStorage.setItem('user_email', obj[0].email);
+                    sessionStorage.setItem('user_name', obj[0].name);
                     sessionStorage.setItem('user_id', obj[0].id);
                     window.location.href="index.html";
                 }

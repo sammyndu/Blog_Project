@@ -16,13 +16,15 @@ $(document).ready(function(){
         $('#add-post').append(`<a class="btn btn-primary"  href="add_post.html" id="new-post">Add New Post</a>`)
         $('#welcome-user').html(`Welcome ${name.split(" ")[0]}`)
         $('#log-out').append(`<a class="nav-link" href="index.html" id="logout-btn">Log Out</a>`)
+        $('.add-comment').append(`<textarea rows="4" cols="50" id="new-comment" class="form-control form-group col-md-6"></textarea>
+        <button id="comment-btn" class="btn btn-primary">Add comment</button>`)
     }
     $.ajax({
         url: `http://localhost:3000/posts/${post_id}`, success: function(result){   
-            if (user_id === result.userId){
+            if (user_id == result.userId){
                 console.log('a')
                 $('#post-info').append(`<h2 id="post-title">${result.title}</h2>
-                <img src="${result.image === undefined ? "cha2.jpg" : result[i].image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
+                <img src="${result.image === undefined ? "cha2.jpg" : result.image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
             <div id="post-content">
                 ${result.content}
                 
@@ -33,7 +35,7 @@ $(document).ready(function(){
             else{
                 
                 $('#post-info').append(`<h2 id="post-title">${result.title}</h2>
-                <img src="${result.image === undefined ? "cha2.jpg" : result[i].image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
+                <img src="${result.image === undefined ? "cha2.jpg" : result.image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
             <div id="post-content">
                 ${result.content}
             </div>`)
@@ -55,7 +57,7 @@ $(document).ready(function(){
                 $('.comment-body').html('')
                 for (let i=0; i<comments.length; i++){                
                             console.log(comments)
-                            if (user_id === comments[i].userId){
+                            if (user_id == comments[i].userId){
                                 resultDat += `<div class="card card-body">
                                 <h6 id="user-name">${comments[i].user === undefined ? "Anonymous": comments[i].user.name}</h6>
                                 <p id="comment">${comments[i].body}</p>
@@ -132,10 +134,10 @@ $(document).ready(function(){
                 url: `http://localhost:3000/posts/${post_id}`, success: function(result){
                 // console.log(res);
                 $('#post-info').html('');
-                if (user_id === result.userId){
+                if (user_id == result.userId){
                     console.log('a')
                     $('#post-info').append(`<h2 id="post-title">${result.title}</h2>
-                    <img src="${result.image === undefined ? "cha2.jpg" : result[i].image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
+                    <img src="${result.image === undefined ? "cha2.jpg" : result.image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
                 <div id="post-content">
                     ${result.content}
                     
@@ -146,7 +148,7 @@ $(document).ready(function(){
                 else{
                     
                     $('#post-info').append(`<h2 id="post-title">${result.title}</h2>
-                    <img src="${result.image === undefined ? "cha2.jpg" : result[i].image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
+                    <img src="${result.image === undefined ? "cha2.jpg" : result.image}" class="card-img-top" alt="..." style="display:block;height:20rem;width: 50%;margin-right:auto;margin-left:auto"><br>
                 <div id="post-content">
                     ${result.content}
                 </div>`)
@@ -196,7 +198,7 @@ $(document).ready(function(){
                             $('.comment-body').html('')
                             for (let i=0; i<comments.length; i++){                
                                         console.log(comments)
-                                        if (user_id === comments[i].userId){
+                                        if (user_id == comments[i].userId){
                                             resultDat += `<div class="card card-body">
                                             <h6 id="user-name">${comments[i].user === undefined ? "Anonymous": comments[i].user.name}</h6>
                                             <p id="comment">${comments[i].body}</p>
@@ -312,7 +314,7 @@ $(document).ready(function(){
                         $('.comment-body').html('')
                         for (let i=0; i<comments.length; i++){                
                                     console.log(comments)
-                                    if (user_id === comments[i].userId){
+                                    if (user_id == comments[i].userId){
                                         resultDat += `<div class="card card-body">
                                         <h6 id="user-name">${comments[i].user === undefined ? "Anonymous": comments[i].user.name}</h6>
                                         <p id="comment">${comments[i].body}</p>

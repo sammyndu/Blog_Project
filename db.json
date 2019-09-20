@@ -16,7 +16,7 @@
     },
     {
       "name": "Ndu Samuel",
-      "email": "admin",
+      "email": "admin@admin.com",
       "password": "1111",
       "id": 3
     }
@@ -79,6 +79,14 @@
       "date_created": "20/09/2019",
       "date_updated": "20/09/2019",
       "id": 7
+    },
+    {
+      "title": "new post",
+      "content": "new post",
+      "userId": "1",
+      "date_created": "18/09/2019",
+      "date_updated": "18/09/2019",
+      "id": 8
     }
   ],
   "comments": [
